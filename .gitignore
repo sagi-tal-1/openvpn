@@ -1,0 +1,67 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude override files as they are usually used for local dev
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Exclude CLI configuration files
+.terraformrc
+terraform.rc
+
+# Exclude all .tf files except specified ones
+*.tf
+!main.tf
+!outputs.tf
+!providers.tf
+!variables.tf
+
+# Exclude all .tfvars files except main.auto.tfvars
+*.tfvars
+!main.auto.tfvars
+
+# Exclude SSH keys and other sensitive files
+*.pem
+*.key
+*.pub
+
+# Exclude any local scripts
+*.sh
+
+# Exclude any backup files
+*.backup
+*.bak
+
+# Exclude any temporary files
+*.tmp
+*.temp
+
+# Exclude any log files
+*.log
+
+# Exclude any environment files
+.env
+.env.*
+
+# Exclude any IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Keep the specified files
+!main.auto.tfvars
+!main.tf
+!outputs.tf
+!providers.tf
+!variables.tf 
